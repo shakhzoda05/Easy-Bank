@@ -1,3 +1,39 @@
+/* public-sans-100 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 100;
+  src: url("../fonts/public-sans-v15-latin-100.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* public-sans-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/public-sans-v15-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+:root {
+  --nav-color: rgb(149, 151, 165);
+  --btn-bg: linear-gradient(
+    134.71deg,
+    rgb(51, 211, 94) -43.027%,
+    rgb(42, 182, 217) 56.553%
+  );
+  --btn-color: rgb(255, 255, 255);
+  --header-bg: rgb(255, 255, 255);
+  --moon-color: white;
+}
+
+.mode {
+  --nav-color: white;
+  --btn-bg: rgb(173, 173, 173);
+  --btn-color: black;
+  --header-bg: #333;
+  --moon-color: #333;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +43,7 @@
 }
 
 .container {
+  max-width: 1150px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -23,4 +60,57 @@
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.site-header {
+  padding: 18px 0;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-top__link {
+  display: inline-block;
+}
+
+.navbar__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.navbar-item + .navbar__item {
+  margin-left: 30px;
+}
+
+.navbar__link {
+  font: Public-Sans;
+}
+
+.header-top__mode-wrapper {
+  padding: 5px;
+  border-radius: 50%;
+  width: 48px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+}
+
+.header-top__hamburger-btn {
+  display: none;
+  border: none;
+  background: transparent;
+}
+
+@media (max-width: 763px) {
+  .navbar .header-top__mode-wrapper {
+    display: none;
+  }
+  .navbar .header-top__mode-wrapper .header-top__hamburger-btn {
+    display: block;
+  }
 }/*# sourceMappingURL=main.css.map */

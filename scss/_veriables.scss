@@ -1,0 +1,47 @@
+:root {
+  --nav-color: rgb(149, 151, 165);
+  --btn-bg: linear-gradient(
+    134.71deg,
+    rgb(51, 211, 94) -43.027%,
+    rgb(42, 182, 217) 56.553%
+  );
+  --btn-color: rgb(255, 255, 255);
+  --header-bg: rgb(255, 255, 255);
+  --moon-color: white;
+}
+
+.mode {
+  --nav-color: white;
+  --btn-bg: rgb(173, 173, 173);
+  --btn-color: black;
+  --header-bg: #333;
+  --moon-color: #333;
+}
+
+@mixin display($al: center, $jc: space-between) {
+  display: flex;
+  align-items: $al;
+  justify-content: $jc;
+}
+
+@mixin linkStyle($fs: 14px, $lh: -1px, $ls: -0.11px) {
+  color: var(--nav-color);
+  font-size: $fs;
+  font-weight: 400;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
+
+@mixin buttonStyle($w: 163px) {
+  width: $w;
+  padding: 8px 0;
+  border-radius: 22px;
+  background: var(--btn-bg);
+  color: var(--btn-color);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0px;
+  border: none;
+  cursor: pointer;
+}
