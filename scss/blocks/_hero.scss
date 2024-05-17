@@ -1,0 +1,37 @@
+.hero-section {
+  padding: 170px 0;
+  background-image: url(../../images/hero\ bg.png);
+  background-repeat: no-repeat;
+  //   background-size: 100%;
+  background-position: top right;
+}
+.hero-title {
+  font-family: "Public-Sans";
+  font-size: 56px;
+  font-weight: 100;
+  line-height: 64px;
+  letter-spacing: -1px;
+  text-align: left;
+  color: rgb(45, 49, 77);
+  width: 394px;
+  padding-top: 80px;
+  padding-bottom: 24px;
+}
+.hero-p {
+  font-family: "Public-Sans";
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.28125px;
+  text-align: left;
+  width: 394px;
+  color: rgba(45, 49, 77, 0.674);
+  padding-bottom: 36px;
+}
+.header-top__requet-btn {
+  color: white;
+  font-family: "Public-Sans";
+  border-radius: 25px;
+  border: none;
+  padding: 10px 33px;
+  background: linear-gradient(135deg, #33d35e 0%, #2ab6d9 99.58%);
+}

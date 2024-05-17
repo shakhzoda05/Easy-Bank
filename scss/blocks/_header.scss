@@ -2,7 +2,7 @@
   padding: 18px 0;
 }
 .header-top {
-  @include display;
+  @include display();
 }
 .header-top__link {
   display: inline-block;
@@ -17,25 +17,23 @@
   margin-left: 30px;
 }
 .navbar__link {
-  font: Public-Sans;
+  font-family: "Public-Sans";
 }
 .header-top__mode-wrapper {
   padding: 5px;
   border-radius: 50%;
   width: 48px;
   height: 40px;
-
   border: none;
-
   cursor: pointer;
 }
-.header-top__request-btn {
-}
+
 .header-top__hamburger-btn {
   display: none;
   border: none;
   background: transparent;
 }
+
 @media (max-width: 763px) {
   .navbar .header-top__mode-wrapper {
     display: none;
